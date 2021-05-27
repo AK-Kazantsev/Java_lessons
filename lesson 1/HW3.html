@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* 10 (число) + 10 (число) = 20 (число)
+       20(число) + 10(строка) = 2010*/
+    let result1 = 10 + 10 + "10";
+    console.log(result1);
+
+    /* 10 (число) + 10 (строка) = 1010 (строка) 
+       1010 (строка) + 10 (число) = 101010(строка)*/
+    let result2 = 10 + "10" + 10;
+    console.log(result2);
+
+    /* 10 (число) + 10 (число) = 20 (число)
+       20 (число) ++(унарный) 10(строка -> число) = 30*/
+    let result3 = 10 + 10 + +"10";
+    console.log(result3);
+
+    // 10(число) / -0 (пустая строка) = -бесконечность //
+    let result4 = 10 / -"";
+    console.log(result4);
+
+    /* 10 (число) / +NaN (да там запятая, это не опечатка) = NaN  */
+    let result5 = 10 / +"2,5";
+    console.log(result5);
+    
+   </script>
+</body>
+</html>
